@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inksight - Paper-First Mindful Journaling for Android</title>
+  <meta
+    name="description"
+    content="Inksight is a private, ad-free Android app for paper-first mindful journaling. Daily reflection prompts, guided journeys, and offline local storage."
+  />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="makebit" />
+  <meta name="application-name" content="Inksight" />
+  <meta name="apple-mobile-web-app-title" content="Inksight" />
+  <meta name="theme-color" content="#fef9ef" />
+  <link rel="canonical" href="https://inksight.makeb.it/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Inksight" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://inksight.makeb.it/" />
+  <meta property="og:title" content="Inksight - Paper-First Mindful Journaling for Android" />
+  <meta
+    property="og:description"
+    content="A quiet, privacy-first, ad-free Android app for mindful journaling. Daily reflection prompts, gentle thought starters, and multi-day journeys, completely offline."
+  />
+  <meta property="og:image" content="https://inksight.makeb.it/assets/icon.png" />
+  <meta property="og:image:alt" content="Inksight app icon" />
+  <meta property="og:image:width" content="2048" />
+  <meta property="og:image:height" content="2048" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Inksight - Paper-First Mindful Journaling for Android" />
+  <meta
+    name="twitter:description"
+    content="A quiet, privacy-first, ad-free Android app for mindful journaling. Daily reflection prompts, gentle thought starters, and multi-day journeys, completely offline."
+  />
+  <meta name="twitter:image" content="https://inksight.makeb.it/assets/icon.png" />
+  <meta name="twitter:image:alt" content="Inksight app icon" />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="apple-touch-icon" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://inksight.makeb.it/#organization",
+          "name": "makebit",
+          "url": "https://inksight.makeb.it/",
+          "email": "makebitcake@gmail.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://inksight.makeb.it/assets/icon.png",
+            "width": 2048,
+            "height": 2048
+          },
+          "sameAs": [
+            "https://ko-fi.com/makebit"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inksight.makeb.it/#website",
+          "name": "Inksight",
+          "url": "https://inksight.makeb.it/",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://inksight.makeb.it/#organization"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://inksight.makeb.it/#app",
+          "name": "Inksight",
+          "url": "https://inksight.makeb.it/",
+          "downloadUrl": "https://play.google.com/store/apps/details?id=com.makebit.inksight",
+          "installUrl": "https://play.google.com/store/apps/details?id=com.makebit.inksight",
+          "operatingSystem": "Android",
+          "applicationCategory": "LifestyleApplication",
+          "isAccessibleForFree": true,
+          "inLanguage": ["en", "de", "es", "fr", "it", "pt"],
+          "description": "Inksight is a quiet, privacy-first, ad-free Android app for paper-first mindful journaling with daily reflection prompts, gentle thought starters, and multi-day guided journeys.",
+          "image": "https://inksight.makeb.it/assets/icon.png",
+          "author": {
+            "@id": "https://inksight.makeb.it/#organization"
+          },
+          "publisher": {
+            "@id": "https://inksight.makeb.it/#organization"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://play.google.com/store/apps/details?id=com.makebit.inksight"
+          },
+          "featureList": [
+            "Daily reflection prompts and gentle thought starters",
+            "Multi-day curated guided journeys",
+            "Curated categories including Gratitude, Mindfulness, and Introspection",
+            "Personal reflections archive and favorites",
+            "Offline local storage with manual JSON backup and restore",
+            "Multilingual support in English, German, Spanish, French, Italian, and Portuguese"
+          ]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Inksight home">
+        <img src="assets/icon.png" alt="Inksight icon" class="brand-icon" width="38" height="38" />
+        <span class="brand-text">
+          <span class="brand-overline">Daily Reflection</span>
+          <span class="brand-name">Inksight</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a
+          class="btn btn-primary btn-sm"
+          href="https://play.google.com/store/apps/details?id=com.makebit.inksight"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get on Google Play
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-heading" class="hero-title">
+            <span class="hero-title-accent">Reflect on paper,</span><br />
+            not screens.
+          </h1>
+          <p class="hero-subtitle">
+            Inksight is made for daily contemplation in your own language. Receive a thoughtful reflection prompt each day, explore gentle step-by-step hints when you feel stuck, and put your phone down so your thoughts can live on real paper.
+          </p>
+
+          <div class="hero-cta-row">
+            <a
+              class="play-store-btn"
+              href="https://play.google.com/store/apps/details?id=com.makebit.inksight"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Inksight on Google Play"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4FC3F7" d="M3.61 1.814L13.793 12 3.61 22.186a1.75 1.75 0 0 1-.61-1.34V3.154c0-.517.226-.994.61-1.34z" />
+                <path fill="#81C784" d="M17.302 8.49L13.793 12l-10.183-10.186c.38-.336.935-.443 1.462-.144l12.23 6.82z" />
+                <path fill="#FFB74D" d="M20.39 10.212c1.05.586 1.05 2.09 0 2.676l-3.088 1.722L13.793 12l3.509-3.51 3.088 1.722z" />
+                <path fill="#E57373" d="M13.793 12l3.509 3.51-12.23 6.82c-.527.299-1.082.192-1.462-.144L13.793 12z" />
+              </svg>
+              <span class="play-store-text">
+                <span class="play-store-eyebrow">Get it on</span>
+                <span class="play-store-title">Google Play</span>
+              </span>
+            </a>
+
+            <a class="btn btn-secondary" href="#features">Explore features</a>
+          </div>
+
+          <div class="trust-row" aria-label="Privacy and quality guarantees">
+            <span class="trust-item">Private &amp; Offline</span>
+            <span class="trust-dot" aria-hidden="true">&middot;</span>
+            <span class="trust-item">Zero Ads or Trackers</span>
+            <span class="trust-dot" aria-hidden="true">&middot;</span>
+            <span class="trust-item">No Accounts Required</span>
+          </div>
+        </div>
+
+        <!-- Standalone Prompt Card Preview -->
+        <div class="hero-visual">
+          <div class="breathing-halo" aria-hidden="true"></div>
+
+          <article id="preview-card" class="prompt-card" aria-label="Sample Inksight reflection prompt">
+            <div class="prompt-card-meta">
+              <span id="preview-category" class="category-pill">Gratitude</span>
+            </div>
+            <p id="preview-question" class="prompt-question">
+              Have I experienced healing as a result of living gratefully? If so, how?
+            </p>
+            <div class="prompt-divider" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paper-First Philosophy Strip -->
+    <section class="philosophy-band" aria-label="Paper-first philosophy">
+      <div class="container philosophy-grid">
+        <div class="philosophy-item">
+          <h2><span class="philosophy-dot" aria-hidden="true"></span>Open for a quiet pause</h2>
+          <p>Receive an unhurried reflection prompt with gentle step-by-step guidance if you want it.</p>
+        </div>
+        <div class="philosophy-item">
+          <h2><span class="philosophy-dot" aria-hidden="true"></span>Pick up a pen</h2>
+          <p>Inksight steps back so your thoughts can breathe on real paper, away from notifications and feeds.</p>
+        </div>
+        <div class="philosophy-item">
+          <h2><span class="philosophy-dot" aria-hidden="true"></span>Keep everything yours</h2>
+          <p>Mark your reflection done, collect Nibs, and keep your history stored privately on your device.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Features Section -->
+    <section id="features" class="section" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-eyebrow">Main Features</span>
+          <h2 id="features-heading" class="section-title">
+            Designed to slow the pace and leave room for thought
+          </h2>
+          <p class="section-lead">
+            Every detail in Inksight is crafted around calm clarity.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+              </svg>
+            </div>
+            <h3>Daily Reflection &amp; Thought Starters</h3>
+            <p>
+              Begin with a calm paper-first prompt each day. Need a nudge? Gentle hints are offered with structured writing steps and a sample reflection, or you can shuffle to draw a fresh prompt, collecting Nibs as you go.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon terracotta">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="6" cy="19" r="3"></circle>
+                <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
+                <circle cx="18" cy="5" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Curated Guided Journeys</h3>
+            <p>
+              Follow multi-day guided journeys designed to bring clarity and calm at your own unhurried pace, with gentle progress tracking as you move through each reflection.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon amber">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+              </svg>
+            </div>
+            <h3>Curated Categories</h3>
+            <p>
+              Browse reflections organized into thoughtful categories, such as Gratitude, Mindfulness, and Introspection, and draw a tailored reflection whenever you need grounding.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon lavender">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3>Personal Reflections Archive</h3>
+            <p>
+              Review every completed prompt chronologically, filter by your Favorites, share a meaningful question with a friend, or reopen any past reflection on your home canvas.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon moss">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3>Private, Offline &amp; Local Backup</h3>
+            <p>
+              No accounts, no ads, and zero telemetry. Your progress and favorites remain strictly on your device, with manual export and restore whenever you switch phones.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon rose">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3>Multilingual &amp; Calmly Themable</h3>
+            <p>
+              English, German, Spanish, French, Italian, or Portuguese, with Light, Dark, and System themes tuned for serene reading morning or night.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download & Privacy Pledge Banner -->
+    <section class="section" aria-labelledby="download-heading">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <h2 id="download-heading">Begin a calmer daily journaling ritual.</h2>
+            <p>
+              Download Inksight on Google Play, with no subscription, no ads, and complete ownership of your data. Read our transparent privacy commitment anytime.
+            </p>
+          </div>
+          <div class="cta-banner-actions">
+            <a
+              class="play-store-btn"
+              href="https://play.google.com/store/apps/details?id=com.makebit.inksight"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4FC3F7" d="M3.61 1.814L13.793 12 3.61 22.186a1.75 1.75 0 0 1-.61-1.34V3.154c0-.517.226-.994.61-1.34z" />
+                <path fill="#81C784" d="M17.302 8.49L13.793 12l-10.183-10.186c.38-.336.935-.443 1.462-.144l12.23 6.82z" />
+                <path fill="#FFB74D" d="M20.39 10.212c1.05.586 1.05 2.09 0 2.676l-3.088 1.722L13.793 12l3.509-3.51 3.088 1.722z" />
+                <path fill="#E57373" d="M13.793 12l3.509 3.51-12.23 6.82c-.527.299-1.082.192-1.462-.144L13.793 12z" />
+              </svg>
+              <span class="play-store-text">
+                <span class="play-store-eyebrow">Get it on</span>
+                <span class="play-store-title">Google Play</span>
+              </span>
+            </a>
+            <a class="btn btn-secondary" href="privacy.html">Read Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="assets/icon.png" alt="Inksight icon" class="brand-icon" width="36" height="36" />
+            <span class="brand-text">
+              <span class="brand-name">Inksight</span>
+            </span>
+          </a>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">App &amp; Legal</h3>
+          <ul class="footer-list">
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.makebit.inksight"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download on Google Play
+              </a>
+            </li>
+            <li><a href="#features">Main Features</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Community</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="https://ko-fi.com/makebit" target="_blank" rel="noopener noreferrer">
+                Support on Ko-fi
+              </a>
+            </li>
+            <li>
+              <a href="https://forms.gle/WGHEuC9uCgdp36Tv5" target="_blank" rel="noopener noreferrer">
+                Suggest a Reflection
+              </a>
+            </li>
+            <li>
+              <a href="mailto:makebitcake@gmail.com">makebitcake@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 makebit. All rights reserved.</span>
+        <span>Package ID: <code>com.makebit.inksight</code></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

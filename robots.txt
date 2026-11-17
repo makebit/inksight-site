@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inksight.makeb.it/sitemap.xml
